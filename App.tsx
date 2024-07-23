@@ -6,7 +6,7 @@ const App = () => {
   return (
     <SafeAreaView>
       <Text>
-      <FlatCards />
+      <FlatCards /> {/*self closing is better way*/}
       </Text>
     </SafeAreaView >
   )
