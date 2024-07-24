@@ -11,6 +11,12 @@ export default function FancyCard() {
         }
         style={styles.cardImage}
         />
+        <View style={styles.cardBody}>
+            <Text style={styles.cardTitle}>Shalimar Garden</Text>
+            <Text style={styles.cardLabel}>Shalmiar Chowk, Lahore</Text>
+            <Text style={styles.cardDescription}>The Shalimar Gardens (Punjabi, Urdu: شالیمار باغ, romanized: Shālīmār Bāgh) are a Mughal garden complex located in Lahore, Punjab, Pakistan. The gardens date from the period when the Mughal Empire was at its artistic and aesthetic zenith,[1] and are now one of Pakistan's most popular tourist destinations.</Text>
+            <Text style={styles.cardFooter}>10 mins away</Text>
+        </View>
       </View>
     </View>
   )
@@ -26,5 +32,10 @@ const styles = StyleSheet.create({
       cardElevated:{},
       cardImage: {
         height:180   
-      }
+      },
+      cardBody:{},
+      cardTitle:{},
+      cardLabel:{},
+      cardDescription:{},
+      cardFooter: {}
 })
