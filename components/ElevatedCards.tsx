@@ -4,9 +4,15 @@ import React from 'react'
 export default function ElevatedCards() {
   return (
     <View>
-      <Text>ElevatedCards</Text>
+      <Text style={styles.headingText}>ElevatedCards</Text>
     </View>
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    headingText: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        paddingHorizontal: 8
+      },
+})
