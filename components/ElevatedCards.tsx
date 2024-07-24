@@ -9,6 +9,21 @@ export default function ElevatedCards() {
         <View style={[styles.card, styles.cardElevated]}>
             <Text >Tap</Text>
         </View>
+        <View style={[styles.card, styles.cardElevated]}>
+            <Text >On</Text>
+        </View>
+        <View style={[styles.card, styles.cardElevated]}>
+            <Text >Me</Text>
+        </View>
+        <View style={[styles.card, styles.cardElevated]}>
+            <Text >To</Text>
+        </View>
+        <View style={[styles.card, styles.cardElevated]}>
+            <Text >Scroll</Text>
+        </View>
+        <View style={[styles.card, styles.cardElevated]}>
+            <Text >More</Text>
+        </View>
       </ScrollView>
     </View>
   )
