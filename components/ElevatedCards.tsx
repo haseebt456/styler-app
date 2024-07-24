@@ -3,9 +3,9 @@ import React from 'react'
 
 export default function ElevatedCards() {
   return (
-    <View>
+    <View >
       <Text style={styles.headingText}>ElevatedCards</Text>
-      <ScrollView style={styles.container}>
+      <ScrollView horizontal contentContainerStyle={styles.contentcontainer}>
         <View style={[styles.card, styles.cardElevated]}>
             <Text >Tap</Text>
         </View>
@@ -35,17 +35,29 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         paddingHorizontal: 8
       },
-      container: {
-        padding:8
+      contentcontainer: {
+        flexDirection:'row',
+        padding:8,
+        borderWidth:2,
       },
       card: {
         flex:1,
         alignItems: 'center',
         justifyContent: 'center',
         height:100,
-        width:100
+        width:100,
+        borderRadius:3,
+        marginHorizontal:4
       },
       cardElevated: {
-        backgroundColor: 'violet'
+        backgroundColor: 'violet',
+        elevation:4,
+        shadowOffset: {
+            width:2,
+            height:2
+        },
+        shadowColor: 'black',
+        shadowOpacity: 0.7,
+        shadowRadius:2
       }
 })

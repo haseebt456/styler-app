@@ -6,11 +6,9 @@ import ElevatedCards from './components/ElevatedCards'
 const App = () => {
   return (
     <SafeAreaView>
-      <ScrollView>
-        <Text>
-      <FlatCards /> {/*self closing is better way*/}
+      <ScrollView >
+      <FlatCards /> 
       <ElevatedCards/>
-      </Text>
       </ScrollView>
     </SafeAreaView >
   )
