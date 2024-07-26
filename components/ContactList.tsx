@@ -58,7 +58,9 @@ const styles = StyleSheet.create({
     container: {},
     userCard:{},
     userImage:{
-        height: 300
+        height: 60,
+        width: 60,
+        borderRadius: 30
     },
     userName: {},
     userStatus: {}
