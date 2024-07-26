@@ -28,14 +28,49 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         paddingHorizontal: 8
       },
-      card:{},
-      cardElevated:{},
-      cardImage: {
-        height:180   
+      card:{
+        height:360,
+        width:342,
+        marginHorizontal:8,
+        marginVertical:12,
+        borderRadius:6
+
       },
-      cardBody:{},
-      cardTitle:{},
-      cardLabel:{},
-      cardDescription:{},
+      cardElevated:{
+        backgroundColor:'#DAE0E2',
+        elevation:3,
+        shadowOffset: {
+            width:1,
+            height:1
+        },
+        shadowColor: 'black'
+      },
+      cardImage: {
+        height:180,
+        marginBottom: 12,
+        borderTopLeftRadius:6,
+        borderTopRightRadius:6   
+      },
+      cardBody:{
+        flex:1,
+        flexGrow:1,
+        paddingHorizontal:10
+        
+      },
+      cardTitle:{
+        fontSize:20,
+        fontWeight:'bold',
+        marginBottom:6
+      },
+      cardLabel:{
+        fontSize:14,
+        marginBottom:6
+      },
+      cardDescription:{
+        color:'#2C3335',
+        fontSize:12,
+        marginBottom:12,
+        flexShrink:1
+      },
       cardFooter: {}
 })
