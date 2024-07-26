@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Image } from 'react-native'
 import React from 'react'
 
 export default function ContactList() {
@@ -36,9 +36,16 @@ export default function ContactList() {
       style={styles.container}
       scrollEnabled={false}
       >
-        {conatcts.map(({uid,name,status})=> (
+        {conatcts.map(({uid,name,status,imageUrl})=> (
             <View key={uid} style={styles.userCard}>
-
+                <Image
+                 source={{
+                    uri: imageUrl
+                 }}
+                 style={styles.userImage}
+                ></Image>
+                <Text style={styles.userName}>{name}</Text>
+                <Text style={styles.userStatus}> {status} </Text>
             </View>
         ))}
       </ScrollView>
@@ -49,5 +56,10 @@ export default function ContactList() {
 const styles = StyleSheet.create({
     headingtext: {},
     container: {},
-    userCard:{}
+    userCard:{},
+    userImage:{
+        height: 300
+    },
+    userName: {},
+    userStatus: {}
 })
