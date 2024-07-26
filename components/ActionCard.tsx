@@ -25,19 +25,67 @@ export default function ActionCard() {
         </View>
         <View style={styles.footerContainer}>
             <TouchableOpacity onPress={()=>openWebsite('https://daily.dev/blog/javascript-latest-version-whats-new#:~:text=The%20latest%20version%2C%20ECMAScript%202023,to%20use%20numbers%20in%20coding')}>
-                <Text>Reed More</Text>
+                <Text style={styles.links}>Reed More</Text>
             </TouchableOpacity>
-        </View>
+    
+            <TouchableOpacity onPress={()=>openWebsite('https://github.com/haseebt456')}>
+                <Text style={styles.links}>Check my Projects</Text>
+            </TouchableOpacity>
+            </View>
       </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-    headingtext: {},
-    card: {},
-    elevatedCard: {},
-    headingContainer: {},
-    headerText: {},
-    cardImage: {},
+    headingtext: {
+        fontSize:24,
+        fontWeight:'bold',
+        paddingHorizontal:8
+    },
+    card: {
+        width:342,
+        height:350,
+        marginHorizontal:8,
+        borderRadius:6,
+        marginVertical:12,
+        
+    },
+    elevatedCard: {
+        elevation: 3,
+        backgroundColor: '#EAF0F1',
+        shadowOffset: {
+            height:1,
+            width:1
+        },
+        shadowColor: '#F4C724',
+        shadowOpacity: 0.4
+    },
+    headingContainer: {
+        height: 40,
+        flexDirection:'row',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    headerText: {
+        color: '#000',
+        fontSize: 16,
+        fontWeight: '600',
+    },
+    cardImage: {
+        height:190
+    },
+    bodyContainer: {
+        padding:10
+    },
+    footerContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-evenly'
+    },
+    links: {
+        backgroundColor:'#F0DF87',
+        padding: 8,
+        color: '#616C6F'
+    }
 })
