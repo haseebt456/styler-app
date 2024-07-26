@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import React from 'react'
 
 export default function ContactList() {
@@ -21,9 +21,21 @@ export default function ContactList() {
     ]
   return (
     <View>
-      <Text>ContactList</Text>
+      <Text style={styles.headingtext}>Contact List</Text>
+      <ScrollView
+      style={styles.container}
+      scrollEnabled={false}
+      >
+        {conatcts.map(({uid,name,status})=> (
+            <View key={uid} style={styles.userCard}></View>
+        ))}
+      </ScrollView>
     </View>
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    headingtext: {},
+    container: {},
+    userCard:{}
+})
