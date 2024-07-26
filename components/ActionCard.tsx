@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Linking, Image } from 'react-native'
+import { StyleSheet, Text, View, Linking, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 export default function ActionCard() {
@@ -22,6 +22,11 @@ export default function ActionCard() {
         />
         <View style={styles.bodyContainer}>
             <Text numberOfLines={3}>The latest version, ECMAScript 2023 (ES14), includes some cool updates: New ways to work with arrays, like findLast() and findLastIndex() Methods to sort and reverse arrays, called toSorted() and toReversed() Better ways to use numbers in coding</Text>
+        </View>
+        <View style={styles.footerContainer}>
+            <TouchableOpacity onPress={()=>openWebsite('https://daily.dev/blog/javascript-latest-version-whats-new#:~:text=The%20latest%20version%2C%20ECMAScript%202023,to%20use%20numbers%20in%20coding')}>
+                <Text>Reed More</Text>
+            </TouchableOpacity>
         </View>
       </View>
     </View>
